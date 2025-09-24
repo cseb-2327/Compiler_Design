@@ -1,0 +1,6 @@
+ 3a command 
+
+root@ubuntu:/home/cse/Desktop# lex ex3a.l
+root@ubuntu:/home/cse/Desktop# bison -d ex3a.y
+root@ubuntu:/home/cse/Desktop# gcc lex.yy.c ex3a.tab.c
+root@ubuntu:/home/cse/Desktop# ./a.out
