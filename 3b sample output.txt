@@ -1,0 +1,11 @@
+sample output :
+
+root@ubuntu:/home/cse/Desktop/104#  bison -d ex3b.y
+root@ubuntu:/home/cse/Desktop/104# flex ex3b.l
+root@ubuntu:/home/cse/Desktop/104# gcc lex.yy.c ex3b.tab.c -o ex3b -lfl
+root@ubuntu:/home/cse/Desktop/104# ./ex3b
+float x y;
+
+Identifier is x
+Identifier is y
+Declaration parsed.
