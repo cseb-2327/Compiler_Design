@@ -1,0 +1,17 @@
+cse@linux:~$ cd Desktop
+cse@linux:~/Desktop$ bison -d ex3d.y 
+cse@linux:~/Desktop$ flex ex3d.l
+cse@linux:~/Desktop$ gcc lex.yy.c ex3d.tab.c -o parser -lfl
+cse@linux:~/Desktop$ ./parser
+
+Enter an arithmetic expression that can have operations Addition, Subtraction, Multiplication, Division, Modulus and Round brackets: 2+3+4*5        
+Result = 25
+
+Entered arithmetic expression is Valid
+cse@linux:~/Desktop$ flex ex3d.l
+cse@linux:~/Desktop$ ./parser
+
+Enter an arithmetic expression that can have operations Addition, Subtraction, Multiplication, Division, Modulus and Round brackets: a+g_y*3
+
+Entered arithmetic expression is Invalid: syntax error
+cse@linux:~/Desktop$ 
