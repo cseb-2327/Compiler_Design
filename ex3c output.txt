@@ -1,0 +1,21 @@
+cse@linux:~/Desktop$ bison -d ex3c.y  
+ex3c.y: warning: 1 shift/reduce conflict [-Wconflicts-sr]
+ex3c.y: warning: 11 reduce/reduce conflicts [-Wconflicts-rr]
+cse@linux:~/Desktop$ flex ex3c.l  
+cse@linux:~/Desktop$ gcc lex.yy.c ex3c.tab.c -o parser -lfl
+cse@linux:~/Desktop$ ./parser
+
+for(i=0;i<10;i++)
+{
+a=c+b
+}
+Recognized FOR loop
+if(a<b)
+{
+a=a+b
+}
+else
+{a=a-b
+}
+Recognized IF Else statement
+
