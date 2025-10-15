@@ -1,0 +1,26 @@
+root@ubuntu:/home/cse/Desktop/104# gcc 6.c
+root@ubuntu:/home/cse/Desktop/104# ./a.out
+Enter the Number of Values: 3
+Left: a
+Right: b+c
+Left: b
+Right: d+e
+Left: c
+Right: f+g
+
+Intermediate Code:
+a = b+c
+b = d+e
+c = f+g
+
+After Dead Code Elimination:
+b = d+e
+c = f+g
+
+After Common Subexpression Elimination:
+b = d+e
+c = f+g
+
+Optimized Code:
+b = d+e
+c = f+g
