@@ -1,0 +1,8 @@
+root@ubuntu:/home/cse/Desktop/104# bison -d type.y
+root@ubuntu:/home/cse/Desktop/104# flex type.l
+root@ubuntu:/home/cse/Desktop/104# gcc type.tab.c lex.yy.c -o parser -lfl
+root@ubuntu:/home/cse/Desktop/104# ./parser
+42
+Type: INTEGER
+hello
+Type: CHAR/STRING
