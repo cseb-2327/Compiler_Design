@@ -2,7 +2,7 @@
 COMPILER DESIGN PROGRAMS
 
 
-## ---5 experimet ---
+## ---5 experiment ---
 --------------------
 type.l
 
